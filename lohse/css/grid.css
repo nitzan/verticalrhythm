@@ -1,0 +1,295 @@
+/*
+	Lohse Grid
+*/
+
+
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.c10 {
+	margin: 0 auto;
+	width: 1150px;
+	padding-right: 90px !important;
+	height: 800px;
+	overflow: hidden;
+}
+.c10_2 {
+	margin: 30px auto 0 auto;
+	width: 1150px;
+}
+
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.g1,
+.g2,
+.g3,
+.g4,
+.g5,
+.g6,
+.g7,
+.g8,
+.g9,
+.g10 {
+	display: inline;
+	float: left;
+	position: relative;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+/* Grid >> Children
+----------------------------------------------------------------------------------------------------*/
+
+.alpha {
+	margin-left: 0;
+}
+
+.omega {
+	margin-right: 0;
+}
+
+/* Grid >> 10 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.c10 .g1, .c10_2 .g1 {
+	width:99px;
+}
+
+.c10 .g2, .c10_2 .g2 {
+	width:214px;
+}
+
+.c10 .g3, .c10_2 .g3 {
+	width:329px;
+}
+
+.c10 .g4, .c10_2 .g4 {
+	width:444px;
+}
+
+.c10 .g5, .c10_2 .g5 {
+	width:559px;
+}
+
+.c10 .g6, .c10_2 .g6 {
+	width:674px;
+}
+
+.c10 .g7, .c10_2 .g7 {
+	width:789px;
+}
+
+.c10 .g8, .c10_2 .g8 {
+	width:904px;
+}
+
+.c10 .g9, .c10_2 .g9 {
+	width:1019px;
+}
+
+.c10 .g10, .c10_2 .g10 {
+	width:1000px;
+	padding: 0 58px 0 76px;
+}
+
+
+
+/* Prefix Extra Space >> 10 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.c10 .pre1, .c10_2 .pre1 {
+	padding-left:115px;
+}
+
+.c10 .pre2, .c10_2 .pre2 {
+	padding-left:230px;
+}
+
+.c10 .pre3, .c10_2 .pre3 {
+	padding-left:345px;
+}
+
+.c10 .pre4, .c10_2 .pre4 {
+	padding-left:460px;
+}
+
+.c10 .pre5, .c10_2 .pre5 {
+	padding-left:575px;
+}
+
+.c10 .pre6, .c10_2 .pre6 {
+	padding-left:690px;
+}
+
+.c10 .pre7, .c10_2 .pre7 {
+	padding-left:805px;
+}
+
+.c10 .pre8, .c10_2 .pre8 {
+	padding-left:920px;
+}
+
+.c10 .pre9, .c10_2 .pre9 {
+	padding-left:1035px;
+}
+
+
+
+/* Suffix Extra Space >> 10 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.c10 .suf1 {
+	padding-right:115px;
+}
+
+.c10 .suf2 {
+	padding-right:230px;
+}
+
+.c10 .suf3 {
+	padding-right:345px;
+}
+
+.c10 .suf4 {
+	padding-right:460px;
+}
+
+.c10 .suf5 {
+	padding-right:575px;
+}
+
+.c10 .suf6 {
+	padding-right:690px;
+}
+
+.c10 .suf7 {
+	padding-right:805px;
+}
+
+.c10 .suf8 {
+	padding-right:920px;
+}
+
+.c10 .suf9 {
+	padding-right:1035px;
+}
+
+
+
+/* Push Space >> 10 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.c10 .push_1 {
+	left:115px;
+}
+
+.c10 .push_2 {
+	left:230px;
+}
+
+.c10 .push_3 {
+	left:345px;
+}
+
+.c10 .push_4 {
+	left:460px;
+}
+
+.c10 .push_5 {
+	left:575px;
+}
+
+.c10 .push_6 {
+	left:690px;
+}
+
+.c10 .push_7 {
+	left:805px;
+}
+
+.c10 .push_8 {
+	left:920px;
+}
+
+.c10 .push_9 {
+	left:1035px;
+}
+
+
+
+/* Pull Space >> 10 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.c10 .pull_1 {
+	left:-115px;
+}
+
+.c10 .pull_2 {
+	left:-230px;
+}
+
+.c10 .pull_3 {
+	left:-345px;
+}
+
+.c10 .pull_4 {
+	left:-460px;
+}
+
+.c10 .pull_5 {
+	left:-575px;
+}
+
+.c10 .pull_6 {
+	left:-690px;
+}
+
+.c10 .pull_7 {
+	left:-805px;
+}
+
+.c10 .pull_8 {
+	left:-920px;
+}
+
+.c10 .pull_9 {
+	left:-1035px;
+}
+
+
+
+
+/* Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}

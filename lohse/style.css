@@ -1,0 +1,245 @@
+/*  
+Theme Name: Lohse
+Theme URI: http://blog.ampersanderson.com
+Description: A minimalist and experimental theme honoring the great Swiss designer Richard Paul Lohse
+Version: 1.0
+Author: Matthew Anderson
+Author URI: http://ampersanderson.com
+*/
+
+* {
+	outline: 0;
+	padding: 0;
+}
+body {
+	margin: 0;
+	overflow-y: scroll;
+	overflow-x: hidden;
+/*	background-image: url(/wp-content/themes/lohse/images/grid.png);
+	background-repeat: repeat-y;
+	background-position: center top;*/
+}
+.post {
+	overflow-y: auto;
+	overflow-x: hidden;
+	margin-bottom: 80px;
+}
+a {font-weight: bold; color: #000;}
+a:hover {color: #666;}
+a:active {color: #333;}
+p.line {
+	height: 10px;
+	width: 1000px;
+	text-indent: -9999px;
+	border-bottom: 2px solid #000;
+	margin: 0;
+}
+a:hover p.line {
+	border-bottom: 2px solid #FFCC00;
+}
+#canvas {
+	position: relative;
+	top: -631px;
+	left: 129px;
+	z-index: 100;
+}
+.region-ultra-top {
+	background-color: #FFCC00;
+	height:200px;
+	margin-top:-200px;
+}
+	.region-ultra-top .c10 {
+		margin: 0 auto !important;
+		padding: 0 0 0 90px;
+	}
+	.region-ultra-top .gleft {
+		float: left;
+		width: 138px;
+		margin-right: 16px;
+	}
+	.region-ultra-top p {
+		font-family: Helvetica, Arial, sans-serif;
+		font-size: 12px;
+		color: #000;
+	}
+	.region-ultra-top p.exit {
+		font-family: Helvetica, Arial, sans-serif;
+		font-size: 12px;
+		font-weight: bold;
+	}
+	.region-ultra-top p.exit a {
+		text-decoration: none;
+		color: #000;
+	}
+	.region-ultra-top h2 {
+		font-family: Helvetica, Arial, sans-serif;
+		font-size: 16px;
+		color: #fff;
+		cursor: default;
+		margin: 15px 0;
+	}
+	.region-ultra-top h2 a {
+		color: #000;
+		text-decoration: none;
+	}
+	.region-ultra-top ul {
+		margin: -3px 0 0 0;
+		list-style-type: none;
+	}
+	.region-ultra-top ul li#recent-posts-3,
+	.region-ultra-top ul li#categories-3 {
+		margin-right: 16px;
+		float: left;
+		width: 214px;
+	}
+	.region-ultra-top ul li#recent-posts-3 a,
+	.region-ultra-top ul li#categories-3 a {
+		font-family: Helvetica, Arial, sans-serif;
+		font-size: 12px;
+		font-weight: normal;
+		text-decoration: none;
+		color: #000;
+	}
+	.region-ultra-top ul li#text-3 {
+		margin-right: 16px;
+		line-height: 16px;
+		width: 329px;
+		float: left;
+		font-family: Helvetica, Arial, sans-serif;
+		font-size: 12px;
+	}
+	.region-ultra-top ul li#text-4 {
+		width: 9px;
+		float: left;
+		margin: 20px 0 0 30px;
+	}
+	
+.header {
+	overflow: auto;
+	height: 20px;
+}
+	.header h2 {
+		font-family: Helvetica, Arial, sans-serif;
+		cursor: pointer;
+		font-size: 16px;
+		margin: 0;
+	}
+	.header h2 a {
+		text-decoration: none;
+		color: #000;
+	}
+	.header p, .single .meta p {
+		font-family: Helvetica, Arial, sans-serif;
+		float: left;
+		font-size: 12px;
+		margin: 3px 0 0 0;
+		color: #999;
+	}
+	.header p a {
+		font-family: Helvetica, Arial, sans-serif;
+		float: left;
+		font-size: 12px;
+		font-weight: normal;
+		color: #999;
+	}
+	.header a.full_post {
+		font-family: Helvetica, Arial, sans-serif;
+		font-weight: normal;
+		font-size: 12px;
+		text-decoration: none;
+		color: #FFCC00;
+	}
+.wpcolumn-wrapper-3 .wpcolumn {
+    float: left;
+    margin: 15px 18px 0 0;
+    width: 212px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+}
+.wpcolumn-wrapper-3 .wpcolumn-last {
+    margin: 15px 0 0 0;
+}
+.entry p, .single p {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	padding: 0 5px 0 0;
+	margin: 0 0 20px -5px;
+}
+.entry p a:link, .single p a:link {
+	font-weight: bold;
+	color: #000;
+}
+.g10 img {
+	margin-top: 20px;
+}
+p.blackbox {
+	width: 214px;
+	height: 34px;
+	background-color: #000;
+	margin: 10px 0 0 0;
+	display: block;
+	text-indent: -9999px;
+}
+.single {
+	background-image: url(/wp-content/themes/lohse/images/single_bg.png);
+	background-repeat: no-repeat;
+	background-position: 76px 0;
+	overflow: auto;
+	width: 615px;
+	min-height: 615px;
+}
+	.single h3.subhead p  {
+		float: left;
+		width: 354px;
+		font-family: Helvetica, Arial, sans-serif;
+		font-size: 16px;
+		line-height: 19px;
+		margin: 115px 8px 0 15px !important;
+	}
+	.single .meta p {
+		font-family: Helvetica, Arial, sans-serif;
+		vertical-align: baseline;
+		float: left;
+		font-size: 12px;
+		margin: 40px 0 0 0;
+		color: #999;
+	}
+.g2 ul {
+	list-style-type: none;
+	margin: 8px 0 0 0;
+}
+.g2 ul li {
+	display: block;
+	margin: 0;
+}
+.g2 ul li a {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #999;
+	text-decoration: none;
+	font-weight: normal;
+}
+ul.post-meta li {
+	font-family: Helvetica, Arial, sans-serif;
+	font-style: italic;
+	font-size: 10px;
+	line-height: 13px;
+	color: #666;
+	width: 214px;
+	margin: 10px 0 0 0;
+	text-indent: -4px;
+}
+ul.post-meta li a {
+	font-family: Helvetica, Arial, sans-serif;
+	font-style: italic;
+	font-size: 10px;
+	color: #666;
+	font-weight: bold;
+}
+span.post-meta-key {
+	color: #fff;
+	font-size: 1px;
+	
+

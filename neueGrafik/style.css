@@ -1,0 +1,35 @@
+/*
+Theme Name: NeueGrafik
+Theme URI: http://www.gregponchak.com
+Description: A Wordpress theme based on the 1958 publication "Neue Grafik" by Richard Paul Lohse, Josef Müller-Brockmann, Hans Neuburg, and Carlo Vivarelli.
+Version: 1.0
+Author: Greg Ponchak
+Author URI: http://www.gregponchak.com
+Tags: swiss, clean, grid, minimal
+*/
+				
+* { list-style:none;margin:0;outline:0;padding:0;text-decoration:none; }
+a { color:#999; }
+a:hover { border-bottom:1px solid #eee;color:#222; }
+body { background:#fff;color:#222;font-family:helvetica, arial, sans-serif;font-size:11px;line-height:18px; }
+object, img { display:block;margin:0 0 1em 0; }
+		
+.clear { clear:both; }
+.column { float:left;padding-right:36px;width:180px; }
+#container { margin:0 auto;padding:36px 0 36px 36px;width:864px; }
+#content { padding-top:126px; }
+.filler { float:left;padding-right:36px;width:180px; }
+.imgComment { padding-bottom:1em; }
+.images { clear:both;float:left;padding:18px 0 0 216px; }
+.images img { float:left;padding-right:36px; }
+.info h5 { color:#222;font-size:72px;line-height:72px;margin-top:-72px; }
+#loading { background:url(loading.gif) no-repeat left top;padding-top:126px; }
+#navigationBlock { padding:36px 0; }
+#navigationBlock ul { float:left;padding-right:36px;width:180px; }
+#navigationBlock ul li { display:inline;padding-right:5px; }
+#navigationBlock ul li a:hover { border-bottom:1px solid #555; }
+#pagination a, #other a { padding-right:5px; }
+.post { padding-bottom:144px; }
+a.title { color:#222;font-weight:bold; }
+#titleBlock h1 a, #titleBlock h3, #titleBlock ul li a { color:#222;font-size:72px;font-weight:bold;line-height:72px; }
+#titleBlock ul li { height:72px;overflow:hidden; }

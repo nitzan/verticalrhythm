@@ -1,0 +1,353 @@
+/*
+Theme Name: kompas
+Theme URI: 
+Description: A WordPress Theme based on the poster by Wim Crouwel
+Author: Robert O'Rourke
+Author URL: http://sanchothefat.com/
+Version: 1.0
+Tags: typography, Wim Crouwel, poster
+*/
+
+
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* =Layout
+-------------------------------------------------------------- */
+
+
+html { background: #a6a48b; color: #000; height: 100%; }
+
+body { font: 21px/24px "Akzidenz-Grotesk", "Helvetica", sans-serif; background: #a6a48b; padding: 0 9px 9px; margin: 0 auto; width: 960px; position: relative; min-height: 960px; }
+body.home { padding: 0 9px 978px; min-height: 0; }
+
+.home #site-title, .home span[class^="rotd"] { font-size: 144px; bottom: 0; left: 0; margin: 0 0 480px 50%; position: absolute; bottom: 0; left: 0; }
+.home.webkit #site-title, .home.webkit span[class^="rotd"] { margin-bottom: 460px; }
+#site-title, span[class^="rotd"] { vertical-align: baseline; white-space: nowrap; line-height: 0.36; font-weight: normal; font-size: 54px; color: #000; position: absolute; left: 0; margin: 0 0 0 25%; -moz-transform-origin: 0 50%; -webkit-transform-origin: 0 50%; transform-origin: 0 50%; z-index: 360; -moz-transform: rotate(0deg); -webkit-transform: rotate(0deg); transform: rotate(0deg);  }
+.page #site-title, .page span[class^="rotd"], .single #site-title, .single span[class^="rotd"] { top: 486px!important; margin-bottom: 0!important; }
+.webkit.page #site-title, .webkit.page span[class^="rotd"], .webkits.single #site-title, .gecko.single span[class^="rotd"] { top: 482px!important; }
+span[class^="rotd"] { color: #fff; z-index: 0; }
+span.rotd-180 { color: #c00; z-index: 359!important; opacity: .99; display: block; }
+
+/*
+  
+This code works ok when the main title is smaller but it's very laggy on the home page massive text * /
+
+@-webkit-keyframes fadein {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.99;
+	}
+}
+
+span.rotd-15,
+span.rotd-195 { -webkit-animation: fadein .5s ease-in .1s 1; }
+
+span.rotd-30,
+span.rotd-210 { -webkit-animation: fadein .5s ease-in .2s 1; }
+
+span.rotd-45,
+span.rotd-225 { -webkit-animation: fadein .5s ease-in .3s 1; }
+
+span.rotd-60,
+span.rotd-240 { -webkit-animation: fadein .5s ease-in .4s 1; }
+
+span.rotd-75,
+span.rotd-255 { -webkit-animation: fadein .5s ease-in .5s 1; }
+
+span.rotd-90,
+span.rotd-270 { -webkit-animation: fadein .5s ease-in .6s 1; }
+
+span.rotd-105,
+span.rotd-285 { -webkit-animation: fadein .5s ease-in .7s 1; }
+
+span.rotd-120,
+span.rotd-300 { -webkit-animation: fadein .5s ease-in .8s 1; }
+
+span.rotd-135,
+span.rotd-315 { -webkit-animation: fadein .5s ease-in .9s 1; }
+
+span.rotd-150,
+span.rotd-330 { -webkit-animation: fadein .5s ease-in 1s 1; }
+
+span.rotd-165,
+span.rotd-345 { -webkit-animation: fadein .5s ease-in 1.1s 1; }
+
+/* */
+
+
+a { color: #000; text-decoration: none; -moz-transition: color .2s linear; -webkit-transition: color .2s linear; transition: color .2s linear; }
+a:hover { text-decoration: none; color: #c00; }
+
+#branding {
+float: left;
+width: 50%;
+text-transform: lowercase;
+margin-top: 108px;
+padding-top: 9px;
+font-size: 36px;
+line-height: 36px;
+}
+
+#site-description { display: inline; position: relative; z-index: 361; }
+
+#branding ul { display: inline; }
+#branding li { display: inline; }
+#branding li a { white-space: nowrap; }
+
+
+article, section {
+
+margin: 0 0 9px 50%;
+width: 50%;
+
+font-size: 36px;
+line-height: 36px;
+
+text-transform: lowercase;
+
+}
+
+section article {
+margin: 0 0 9px;
+width: auto;
+}
+
+body.page article {
+margin-bottom: 36px;
+}
+
+.page h1,
+section nav,
+article nav {
+min-height: 72px;
+margin-bottom: 36px;
+padding-top: 9px;
+}
+
+.nav-next a:hover:after { display: inline-block; content: "\2014"; color: #000; margin-left: 9px; }
+.nav-previous a:hover:before { display: inline-block; content: "\2014"; margin-left: -45px; float: left; color: #000; }
+
+.entry-title {
+font-weight: normal;
+}
+.entry-title a {
+display: block;
+}
+.entry-title a:before {
+display: block;
+content: "\221E";
+width: 100%;
+}
+
+.entry-content {
+margin-top: 36px;
+
+font-size: 18px;
+line-height: 24px;
+
+}
+
+.page .entry-content a,
+.single .entry-content a { color: #fff; }
+.page .entry-content a:hover,
+.single .entry-content a:hover { color: #c00; }
+
+.entry-content p {
+margin: 0 0 24px;
+text-transform: none;
+}
+.home .entry-content p {
+margin: 0;
+text-transform: lowercase;
+}
+.entry-content ul {
+	margin: 0 0 24px;
+	list-style: circle;
+}
+.entry-content ol {
+	margin: 0 0 24px;
+	list-style: decimal-leading-zero;
+}
+.entry-content li {
+
+}
+
+.entry-content img {
+	margin: 0 0 24px;
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+blockquote {
+	color: rgba(0,0,0,.7);
+}
+blockquote p {
+	margin: 0;
+}
+blockquote:before {
+	content: "\201C";
+}
+/*blockquote:after {
+	content: "\201D";
+	margin: 0 0 24px;
+}*/
+
+#content .gallery {
+margin: 0 0 12px;
+}
+
+#content .gallery br:last-child {
+display: none;
+}
+
+#content .gallery .gallery-item {
+border: 0;
+padding: 0;
+width: 33.3%;
+margin: 0 0 12px;
+}
+
+#content .gallery-item img {
+border: 0;
+padding: 0;
+margin: 0;
+height: auto;
+}
+
+.alignright { float: right; }
+.alignleft { float: left; }
+.alignnone { display: inline-block; margin: 0 0 24px; }
+.aligncenter { display: block; margin: 0 auto 24px; }
+
+.post-edit-link { position: absolute; top: 9px; left: 9px; font-size: 10px; }
+
+
+footer {
+
+position: absolute;
+bottom: 60px;
+right: 100%;
+font-size: 9px;
+margin-right: 0;
+
+-moz-transform-origin: right bottom;
+-moz-transform: rotate(90deg);
+-webkit-transform-origin: right bottom;
+-webkit-transform: rotate(90deg);
+transform-origin: right bottom;
+transform: rotate(90deg);
+
+white-space: nowrap;
+
+}
+
+footer div { display: inline; }
+
+footer a { text-decoration: none; } 
