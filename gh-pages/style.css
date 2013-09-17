@@ -1,0 +1,94 @@
+/*
+Theme Name: VR
+Theme URI: http://nitzan.co.uk
+Description: VR
+Version: 3.0
+Author: Nitzan
+Author URI: http://nitzan.co.uk
+Tags: starkers, naked, clean, basic
+*/
+
+@import url(css/baseline.css);
+
+@import url(css/cycle.css);
+
+
+*{margin: 0;padding:0;}
+
+#wrapper{margin: 2em;padding:0 2em;font: 20px Palatino, Georgia, Times, "Times New Roman", serif;line-height: 160%;text-align: justify;width: 800px;}
+
+#access{display: none;}
+
+#header{margin: 1.65em 0;}
+
+
+
+
+/*image*/
+.themes img{background-color: black;padding: 2em;margin:0.5em 0 0 0;}
+.themes .wp-caption{}
+.themes .wp-caption-text{position: relative;margin-top: 0em;clear: both;}
+.themes .wp-caption p{position:relative;background-color:white;font-size: 80%;height: 2em;color: gray;}
+
+
+img{max-width:700px;height: auto;padding:0 10px 10px 0;background-color: black; padding: 2em;}
+
+/*content*/
+.content{position: relative;margin: 1em 0 4em 0;}
+.post-content{margin: 0 0 1em 0;}
+
+       
+/*typography*/       
+h1.title {font-weight: bold;font-size: 1.33em;line-height: 1.25em;font-size: 1.25em; color:black;font-size: 200%;border-bottom: 3px solid black;}
+p+p {margin:  0 0 1.65em 0;}
+
+.post-title{margin: 0 0 1em 0;}
+    
+  
+/*links*/
+a{color: black;text-decoration: none;}
+a:hover{}
+
+article a{font-style: italic;}
+
+
+
+/*Footer*/        
+.footer{margin:1em 0 ;color: gray;}
+.footer a, .footer p{color: gray;}
+.footer ul li{display: inline;list-style-type: none;margin: 0 2.4em 0 0;}
+       
+/*mailing list*/
+form{display: inline;margin: 0 0 0 2em;	}
+input{font: 20px Palatino, Georgia, Times, "Times New Roman", serif;line-height: 160%;text-align: justify;}
+
+
+article{margin:0 0 1em 0;}
+
+
+/*discuss*/
+
+.discuss a{margin: -1em 0 2em 0;float: right;color: gray;font-size: 80%;line-height: 100%;	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+
+}
+
+.discuss a:hover{color: black;background-color: gray;}
+
+.theme {margin: 0 0 5em 0;}
+
+
+
+.single, article{min-height: 400px;}
+
+
+#top{margin:0 0 0 2em;;position:absolute; top:25px;left:80%;display:block;z-index:9;padding:0 0 1em 0;}
+#top a{color:gray;text-decoration:none;display:block;opacity:0.2;z-index:9;}
+#top a:hover{opacity:1;}
+
+
+#slideshow-post img {}
+
