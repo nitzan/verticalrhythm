@@ -11,553 +11,70 @@
 	<title>Vertical Rhythm</title>
 	<style>
 		
-		/*
-Theme Name: VR
-Theme URI: http://nitzan.co.uk
-Description: VR
-Version: 3.0
-Author: Nitzan
-Author URI: http://nitzan.co.uk
-Tags: starkers, naked, clean, basic
-*/
-
-/* Baseline - a designer framework, Copyright (C) 2009 Stephane Curzi, ProjetUrbain.com, Creative Commons Attribution-Share Alike 3.0 License */
-
-/* grid */
-#page {
-    width: 990px;
-    position: relative
-}
-
-#page:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden
-}
-
-.column {
-    margin-left: 18px;
-    display: block;
-    float: left
-}
-
-.colgroup {
-    display: block;
-    float: left
-}
-
-.first {
-    margin-left: 0;
-    clear: left
-}
-
-.gutter {
-    margin-left: 18px
-}
-
-.no-gutter {
-    margin-left: 0
-}
-
-.align-left {
-    float: left
-}
-
-.align-right {
-    float: right;
-    text-align: right
-}
-
-.clear {
-    float: left
-}
-
-header, section {
-    padding-bottom: 18px
-}
-
-.leading {
-    margin-bottom: 18px
-}
-
-.noleading {
-    margin-bottom: 0 !important
-}
-
-.width1 {
-    width: 234px
-}
-
-.width2 {
-    width: 486px
-}
-
-.width3 {
-    width: 738px
-}
-
-.width4 {
-    width: 990px;
-    margin-left: 0 !important
-}
-
-.full {
-    display: block;
-    float: left;
-    width: 100%;
-    margin-left: 0 !important
-}
-
-.unitx1 {
-    width: 108px
-}
-
-.unitx2 {
-    width: 234px
-}
-
-.unitx3 {
-    width: 360px
-}
-
-.unitx4 {
-    width: 486px
-}
-
-.unitx5 {
-    width: 612px
-}
-
-.unitx6 {
-    width: 738px
-}
-
-.unitx7 {
-    width: 864px
-}
-
-.unitx8 {
-    width: 990px;
-    margin-left: 0 !important
-}
-
-.columnsx2 {
-    -webkit-column-count: 2;
-    -webkit-column-gap: 18px;
-    -moz-column-count: 2;
-    -moz-column-gap: 18px;
-    column-count: 2;
-    column-gap: 18px
-}
-
-.columnsx4 {
-    -webkit-column-count: 4;
-    -webkit-column-gap: 18px;
-    -moz-column-count: 4;
-    -moz-column-gap: 18px;
-    column-count: 4;
-    column-gap: 18px
-}
-
-th.width1, td.width1 {
-    width: 234px
-}
-
-th.width2, td.width2 {
-    width: 486px
-}
-
-th.width3, td.width3 {
-    width: 738px
-}
-
-th.width4, td.width4 {
-    width: 990px
-}
-
-th.unitx1, th.unitx1 {
-    width: 108px
-}
-
-th.unitx2, td.unitx2 {
-    width: 234px
-}
-
-th.unitx3, td.unitx3 {
-    width: 360px
-}
-
-th.unitx4, td.unitx4 {
-    width: 486px
-}
-
-th.unitx5, td.unitx5 {
-    width: 612px
-}
-
-th.unitx6, td.unitx6 {
-    width: 738px
-}
-
-th.unitx7, td.unitx7 {
-    width: 864px
-}
-
-th.unitx8, td.unitx8 {
-    width: 990px
-}
-
-label.width1, label.width2, label.width3, label.width4 {
-    margin-left: 18px;
-    float: left
-}
-
-label.unitx1, label.unitx2, label.unitx3, label.unitx4, label.unitx5,
-label.unitx6, label.unitx7, label.unitx8 {
-    margin-left: 18px;
-    float: left
-}
-
-label.first {
-    margin-left: 0
-}
-
-label.width4, label.unitx8 {
-    width: 990px;
-    overflow: hidden
-}
-
-label.width1 input[type="text"], label.width1 input[type="password"],
-label.width1 input[type="select"], label.width1 input[type="search"] {
-    width: 228px
-}
-
-label.width2 input[type="text"], label.width2 input[type="password"],
-label.width2 input[type="select"], label.width2 input[type="search"] {
-    width: 480px
-}
-
-label.width3 input[type="text"], label.width3 input[type="password"],
-label.width3 input[type="select"], label.width3 input[type="search"] {
-    width: 732px
-}
-
-label.width4 input[type="text"], label.width4 input[type="password"],
-label.width4 input[type="select"], label.width4 input[type="search"] {
-    width: 984px
-}
-
-label.width1 select {
-    width: 234px
-}
-
-label.width2 select {
-    width: 486px
-}
-
-label.width3 select {
-    width: 738px
-}
-
-label.width4 select {
-    width: 990px
-}
-
-label.unitx1 input[type="text"], label.unitx1 input[type="password"],
-label.unitx1 input[type="select"], label.unitx1 input[type="search"] {
-    width: 102px
-}
-
-label.unitx2 input[type="text"], label.unitx2 input[type="password"],
-label.unitx2 input[type="select"], label.unitx2 input[type="search"] {
-    width: 228px
-}
-
-label.unitx3 input[type="text"], label.unitx3 input[type="password"],
-label.unitx3 input[type="select"], label.unitx3 input[type="search"] {
-    width: 354px
-}
-
-label.unitx4 input[type="text"], label.unitx4 input[type="password"],
-label.unitx4 input[type="select"], label.unitx4 input[type="search"] {
-    width: 480px
-}
-
-label.unitx5 input[type="text"], label.unitx5 input[type="password"],
-label.unitx5 input[type="select"], label.unitx5 input[type="search"] {
-    width: 606px
-}
-
-label.unitx6 input[type="text"], label.unitx6 input[type="password"],
-label.unitx6 input[type="select"], label.unitx6 input[type="search"] {
-    width: 732px
-}
-
-label.unitx7 input[type="text"], label.unitx7 input[type="password"],
-label.unitx7 input[type="select"], label.unitx7 input[type="search"] {
-    width: 858px
-}
-
-label.unitx8 input[type="text"], label.unitx8 input[type="password"],
-label.unitx8 input[type="select"], label.unitx8 input[type="search"] {
-    width: 984px
-}
-
-label.unitx1 select {
-    width: 108px
-}
-
-label.unitx2 select {
-    width: 234px
-}
-
-label.unitx3 select {
-    width: 360px
-}
-
-label.unitx4 select {
-    width: 486px
-}
-
-label.unitx5 select {
-    width: 612px
-}
-
-label.unitx6 select {
-    width: 738px
-}
-
-label.unitx7 select {
-    width: 864px
-}
-
-label.unitx8 select {
-    width: 990px
-}
-
-/**
- * jQuery sexyCycle v0.3
- *
- * Terms of Use - jQuery sexyCycle
- * under the MIT (http://www.opensource.org/licenses/mit-license.php) License.
- *
- * Copyright 2010 suprb.com All rights reserved.
- * (http://suprb.com/apps/sexyCycle/)
- */
-
-ul.sexyCycle-content {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 99999999;
-    position: absolute 
-}
-
-li.sexyCycle-content {
-    margin: 0;
-    padding: 0;
-}
-
-.sexyCycle {
-    position: relative;
-    overflow: hidden;
-}
-
-.sexyCycle-wrap {
-    position: relative;
-    width: 99999px;
-}
-
-.sexyCycle-content {
-    width: 99999;
-    position: absolute;
-    overflow: hidden;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-#wrapper {
-    margin: 2em;
-    padding: 0 2em;
-    font: 20px Palatino, Georgia, Times, "Times New Roman", serif;
-    line-height: 160%;
-    text-align: justify;
-    width: 800px;
-}
-
-#access {
-    display: none;
-}
-
-#header {
-    margin: 1.65em 0;
-}
-
-/*image*/
-.themes img {
-    background-color: black;
-    padding: 2em;
-    margin: 0.5em 0 0 0;
-}
-
-.themes .wp-caption {}
-
-.themes .wp-caption-text {
-    position: relative;
-    margin-top: 0em;
-    clear: both;
-}
-
-.themes .wp-caption p {
-    position: relative;
-    background-color: white;
-    font-size: 80%;
-    height: 2em;
-    color: gray;
-}
-
-img {
-    max-width: 700px;
-    height: auto;
-    padding: 0 10px 10px 0;
-    background-color: black;
-    padding: 2em;
-}
-
-/*content*/
-.content {
-    position: relative;
-    margin: 1em 0 4em 0;
-}
-
-.post-content {
-    margin: 0 0 1em 0;
-}
-
-/*typography*/
-h1.title {
-    font-weight: bold;
-    font-size: 1.33em;
-    line-height: 1.25em;
-    font-size: 1.25em;
-    color: black;
-    font-size: 200%;
-    border-bottom: 3px solid black;
-}
-
-p+p {
-    margin: 0 0 1.65em 0;
-}
-
-.post-title {
-    margin: 0 0 1em 0;
-}
-
-/*links*/
-a {
-    color: black;
-    text-decoration: none;
-}
-
-a:hover {}
-
-article a {
-    font-style: italic;
-}
-
-/*Footer*/
-.footer {
-    margin: 1em 0 ;
-    color: gray;
-}
-
-.footer a, .footer p {
-    color: gray;
-}
-
-.footer ul li {
-    display: inline;
-    list-style-type: none;
-    margin: 0 2.4em 0 0;
-}
-
-/*mailing list*/
-form {
-    display: inline;
-    margin: 0 0 0 2em;
-}
-
-input {
-    font: 20px Palatino, Georgia, Times, "Times New Roman", serif;
-    line-height: 160%;
-    text-align: justify;
-}
-
-article {
-    margin: 0 0 1em 0;
-}
-
-/*discuss*/
-
-.discuss a {
-    margin: -1em 0 2em 0;
-    float: right;
-    color: gray;
-    font-size: 80%;
-    line-height: 100%;
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-
-}
-
-.discuss a:hover {
-    color: black;
-    background-color: gray;
-}
-
-.theme {
-    margin: 0 0 5em 0;
-}
-
-.single, article {
-    min-height: 400px;
-}
-
-#top {
-    margin: 0 0 0 2em;
-    ;
-    position: absolute;
-    top: 25px;
-    left: 80%;
-    display: block;
-    z-index: 9;
-    padding: 0 0 1em 0;
-}
-
-#top a {
-    color: gray;
-    text-decoration: none;
-    display: block;
-    opacity: 0.2;
-    z-index: 9;
-}
-
-#top a:hover {
-    opacity: 1;
-}
-
-#slideshow-post img {}
-
-
-		
+#page{width:990px;position:relative}
+#page:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.column{margin-left:18px;display:block;float:left}
+.colgroup{display:block;float:left}
+.first{margin-left:0;clear:left}
+.gutter{margin-left:18px}
+.align-right{float:right;text-align:right}
+header,section{padding-bottom:18px}
+.leading{margin-bottom:18px}
+.noleading{margin-bottom:0!important}
+.full{display:block;float:left;width:100%;margin-left:0!important}
+.columnsx2{-webkit-column-count:2;-webkit-column-gap:18px;-moz-column-count:2;-moz-column-gap:18px;column-count:2;column-gap:18px}
+.columnsx4{-webkit-column-count:4;-webkit-column-gap:18px;-moz-column-count:4;-moz-column-gap:18px;column-count:4;column-gap:18px}
+label.width4,label.unitx8{width:990px;overflow:hidden}
+label.unitx1 input[type=text],label.unitx1 input[type=password],label.unitx1 input[type=select],label.unitx1 input[type=search]{width:102px}
+label.unitx3 input[type=text],label.unitx3 input[type=password],label.unitx3 input[type=select],label.unitx3 input[type=search]{width:354px}
+label.unitx5 input[type=text],label.unitx5 input[type=password],label.unitx5 input[type=select],label.unitx5 input[type=search]{width:606px}
+label.unitx7 input[type=text],label.unitx7 input[type=password],label.unitx7 input[type=select],label.unitx7 input[type=search]{width:858px}
+ul.sexyCycle-content{list-style:none;width:99999999px;position:absolute;margin:0;padding:0}
+.sexyCycle{position:relative;overflow:hidden}
+.sexyCycle-wrap{position:relative;width:99999px}
+.sexyCycle-content{width:99999px;position:absolute;overflow:hidden}
+#wrapper{font:20px Palatino, Georgia, Times, "Times New Roman", serif;line-height:160%;text-align:justify;width:800px;margin:2em;padding:0 2em}
+#access{display:none}
+#header{margin:1.65em 0}
+.themes img{background-color:#000;margin:.5em 0 0;padding:2em}
+.themes .wp-caption-text{position:relative;margin-top:0;clear:both}
+.themes .wp-caption p{position:relative;background-color:#FFF;font-size:80%;height:2em;color:gray}
+img{max-width:700px;height:auto;background-color:#000;padding:2em}
+.content{position:relative;margin:1em 0 4em}
+h1.title{font-weight:700;line-height:1.25em;color:#000;font-size:200%;border-bottom:3px solid #000}
+p+p{margin:0 0 1.65em}
+a{color:#000;text-decoration:none}
+article a{font-style:italic}
+.footer{color:gray;margin:1em 0}
+.footer a,.footer p{color:gray}
+.footer ul li{display:inline;list-style-type:none;margin:0 2.4em 0 0}
+form{display:inline;margin:0 0 0 2em}
+input{font:20px Palatino, Georgia, Times, "Times New Roman", serif;line-height:160%;text-align:justify}
+.discuss a{float:right;color:gray;font-size:80%;line-height:100%;-moz-transition:all 1s ease-in-out;-o-transition:all 1s ease-in-out;-webkit-transition:all 1s ease-in-out;transition:all 1s ease-in-out;margin:-1em 0 2em}
+.discuss a:hover{color:#000;background-color:gray}
+.theme{margin:0 0 5em}
+.single,article{min-height:400px}
+#top{position:absolute;top:25px;left:80%;display:block;z-index:9;margin:0 0 0 2em;padding:0 0 1em}
+#top a{color:gray;text-decoration:none;display:block;opacity:0.2;z-index:9}
+#top a:hover{opacity:1}
+.no-gutter,label.first{margin-left:0}
+.align-left,.clear{float:left}
+.width1,.unitx2,th.width1,td.width1,th.unitx2,td.unitx2,label.width1 select,label.unitx2 select{width:234px}
+.width2,.unitx4,th.width2,td.width2,th.unitx4,td.unitx4,label.width2 select,label.unitx4 select{width:486px}
+.width3,.unitx6,th.width3,td.width3,th.unitx6,td.unitx6,label.width3 select,label.unitx6 select{width:738px}
+.width4,.unitx8{width:990px;margin-left:0!important}
+.unitx1,th.unitx1,th.unitx1,label.unitx1 select{width:108px}
+.unitx3,th.unitx3,td.unitx3,label.unitx3 select{width:360px}
+.unitx5,th.unitx5,td.unitx5,label.unitx5 select{width:612px}
+.unitx7,th.unitx7,td.unitx7,label.unitx7 select{width:864px}
+th.width4,td.width4,th.unitx8,td.unitx8,label.width4 select,label.unitx8 select{width:990px}
+label.width1,label.width2,label.width3,label.width4,label.unitx1,label.unitx2,label.unitx3,label.unitx4,label.unitx5,label.unitx6,label.unitx7,label.unitx8{margin-left:18px;float:left}
+label.width1 input[type=text],label.width1 input[type=password],label.width1 input[type=select],label.width1 input[type=search],label.unitx2 input[type=text],label.unitx2 input[type=password],label.unitx2 input[type=select],label.unitx2 input[type=search]{width:228px}
+label.width2 input[type=text],label.width2 input[type=password],label.width2 input[type=select],label.width2 input[type=search],label.unitx4 input[type=text],label.unitx4 input[type=password],label.unitx4 input[type=select],label.unitx4 input[type=search]{width:480px}
+label.width3 input[type=text],label.width3 input[type=password],label.width3 input[type=select],label.width3 input[type=search],label.unitx6 input[type=text],label.unitx6 input[type=password],label.unitx6 input[type=select],label.unitx6 input[type=search]{width:732px}
+label.width4 input[type=text],label.width4 input[type=password],label.width4 input[type=select],label.width4 input[type=search],label.unitx8 input[type=text],label.unitx8 input[type=password],label.unitx8 input[type=select],label.unitx8 input[type=search]{width:984px}
+li.sexyCycle-content,*{margin:0;padding:0}
+.post-content,.post-title,article{margin:0 0 1em}	
 	</style>
 	
 	<script>
@@ -642,7 +159,7 @@ $(document).ready(retina);
 <header><h2><a href="http://verticalrhythm.org/?post_type=themes&p=76">Kompas</a> </h2></header>
 <div class="image"></div>
 
-<div class="post-content theme width3">   <div id="attachment_61" class="wp-caption alignnone" style="width: 710px"><a href="imgs//2010/11/Kompas.jpg"><img class="size-full wp-image-61" title="Kompas" src="/images/Kompas1.jpg" alt="" width="700" height="1009" /></a><p class="wp-caption-text">Image by Het Geheugen van Nederland/Koninklijke Bibliotheek</p></div>
+<div class="post-content theme width3">   <div id="attachment_61" class="wp-caption alignnone" style="width: 710px"><a href="imgs//2010/11/Kompas.jpeg"><img class="size-full wp-image-61" title="Kompas" src="/images/Kompas1.jpeg" alt="" width="700" height="1009" /></a><p class="wp-caption-text">Image by Het Geheugen van Nederland/Koninklijke Bibliotheek</p></div>
 <p><em><a href="http://sanchothefat.com/">Robert O&#8217;Rourke</a></em></p>
 <p>The theme is based on one of Wim Crouwel&#8217;s posters for the Stedelijk Museum in Amsterdam. While it is not one of his more famous posters I felt it lent itself well to being translated into a usable WordPress theme and I loved the visual impact of the rotated text. The act of deconstructing the design was quite revealing as to the attention to detail that goes into something that looks so simple. The site title is used for the rotated text (generated automatically using javascript and CSS3 transformations). I adapted the design a little for the inner pages to support larger passages of text by moving the title into a single column.<br />
 &mdash; <a href="http://cl.ly/851db51e68d85256dc5d">Preview</a> / <a href="http://cl.ly/889f91040181cf4db629">Download the theme</a></p>
@@ -658,7 +175,7 @@ $(document).ready(retina);
 <header><h2><a href="http://verticalrhythm.org/?post_type=themes&p=75">Tonhalle-Quartett</a> </h2></header>
 <div class="image"></div>
 
-<div class="post-content theme width3">   <p><img src="/static/images/Tonhalle-Quartett.jpg" alt="" title="Tonhalle-Quartett-1958" width="700" height="992" class="alignnone size-full wp-image-51" /><br />
+<div class="post-content theme width3">   <p><img src="/static/images/Tonhalle-Quartett.jpeg" alt="" title="Tonhalle-Quartett-1958" width="700" height="992" class="alignnone size-full wp-image-51" /><br />
 <a href="http://lawrencebrown.eu/"><em>Lawrence Brown</em></a></p>
 <p>Looking at Josef Müller-Brockmann&#8217;s Tonhalle Quartett poster, I felt I needed create a theme from it. After sketching out variations of browser window sizes, I thought how they would crop content &#8211; those with smaller screens would be presented with the circles leading them down the page; medium sized screens are treated to a slice of the header text and larger screens get the first few lines of the paragraph text. Layering techniques are emulated using RGBA colour values and composition is presented using JQuery and absolute positioning. The theme only uses a header, body text and an next item link.</p>
 <p>&mdash; <a href="http://cl.ly/694cb1dc33f1010e77a2">Preview</a> / <a href="http://cl.ly/398541d0ceef9f85c037">Download</a></p>
@@ -690,7 +207,7 @@ Müller–Brockmann&#8217;s work has always been an inspiration, so when invited
 <header><h2><a href="http://verticalrhythm.org/?post_type=themes&p=74">Neue Grafik</a> </h2></header>
 <div class="image"></div>
 
-<div class="post-content theme width3">   <div id="attachment_13" class="wp-caption alignnone" style="width: 710px"><img class="size-full wp-image-13  " title="neue-grafik" src="/images/neue-grafik11.jpg" alt="" width="700" height="783" /><p class="wp-caption-text">Image by Maryellen McFadden</p></div>
+<div class="post-content theme width3">   <div id="attachment_13" class="wp-caption alignnone" style="width: 710px"><img class="size-full wp-image-13  " title="neue-grafik" src="/images/neue-grafik11.jpeg" alt="" width="700" height="783" /><p class="wp-caption-text">Image by Maryellen McFadden</p></div>
 <p><em><a href="http://www.gregponchak.com/">Greg Ponchak</a></em></p>
 <blockquote><p>Neue Grafik, the publication, was designed with a strong sense of hierarchy. For that reason, I was compelled to use it as the driving force of this design.<br />
 The title, subtitle, and recent posts (which fade in and out)  perfectly took the place where of the original title. The posts automatically divide into three columns to sync with the original design. I wanted to integrate images and videos seamlessly, which are placed into the posts are now automatically resized.
